@@ -1,0 +1,712 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Robell Material MRC — Sridharshan</title>
+
+    <link rel="stylesheet" href="../css/style.css">
+
+    <style>
+        /* Research Page */
+
+        .research-table-wrap {
+            width: 100%;
+            overflow-x: auto;
+            margin: 25px 0;
+        }
+
+        .research-table {
+            width: 100%;
+            border-collapse: collapse;
+            min-width: 600px;
+        }
+
+        .research-table th,
+        .research-table td {
+            padding: 14px 16px;
+            text-align: left;
+            border-bottom: 1px solid var(--line);
+        }
+
+        .research-table th {
+            color: var(--text);
+            font-weight: 700;
+        }
+
+        .research-table td {
+            color: var(--muted);
+        }
+
+        .research-table strong {
+            color: var(--text);
+        }
+
+        .research-list {
+            padding-left: 22px;
+            margin: 20px 0;
+        }
+
+        .research-list li {
+            color: var(--muted);
+            margin-bottom: 12px;
+            line-height: 1.7;
+        }
+
+        .research-list strong {
+            color: var(--text);
+        }
+
+        .research-highlight {
+            border-left: 3px solid var(--accent);
+            padding: 5px 0 5px 20px;
+            margin: 25px 0;
+        }
+
+        .research-highlight p {
+            margin-bottom: 0;
+        }
+
+        .research-gallery-section {
+            padding-top: 20px;
+            padding-bottom: 140px !important;
+        }
+
+        .research-gallery {
+            width: 100%;
+            display: grid;
+            grid-template-columns: repeat(3, minmax(0, 1fr));
+            gap: 24px;
+        }
+
+        .research-photo {
+            width: 100%;
+            overflow: hidden;
+        }
+
+        .research-photo img {
+            width: 100%;
+            height: 360px;
+            object-fit: contain;
+            display: block;
+            border: 1px solid var(--line);
+            border-radius: 16px;
+            background: var(--surface);
+
+            transition:
+                transform .25s ease,
+                border-color .25s ease;
+        }
+
+        .research-photo:hover img {
+            transform: translateY(-4px);
+            border-color: var(--accent);
+        }
+
+        @media (max-width: 900px) {
+
+            .research-gallery {
+                grid-template-columns: repeat(2, minmax(0, 1fr));
+            }
+
+            .research-photo img {
+                height: 320px;
+            }
+        }
+
+        @media (max-width: 600px) {
+
+            .research-gallery-section {
+                padding-bottom: 100px !important;
+            }
+
+            .research-gallery {
+                grid-template-columns: 1fr;
+                gap: 20px;
+            }
+
+            .research-photo img {
+                height: auto;
+                max-height: 500px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- Back to About -->
+    <div class="container experience-back">
+        <a href="../about.html" class="btn btn-secondary">
+            ← Back to About
+        </a>
+    </div>
+
+
+    <main>
+
+        <!-- Research Header -->
+        <section class="project-hero">
+            <div class="container">
+
+                <div class="kicker reveal">
+                    EXPERIENCE
+                </div>
+
+                <h1 class="reveal">
+                    Robell Material MRC
+                </h1>
+
+                <p class="project-subtitle reveal">
+                    Research Intern
+                </p>
+
+            </div>
+        </section>
+
+
+        <!-- Research -->
+        <section class="project-section">
+            <div class="container">
+
+                <div class="project-section-head reveal">
+                    <div class="section-number">01</div>
+
+                    <div>
+                        <div class="kicker">
+                            RESEARCH
+                        </div>
+
+                        <h2>
+                            Effect of Cu²⁺ and K⁺ Co-doping on the Charge Storage Mechanism of Mn₃O₄ in Aqueous Zinc-Ion Batteries
+                        </h2>
+                    </div>
+                </div>
+
+
+                <div class="project-content reveal">
+
+                    <h3>Why this matters</h3>
+
+                    <p>
+                        Lithium-ion batteries are everywhere, but lithium is
+                        expensive, flammable, and mined in a handful of places.
+                        Aqueous zinc-ion batteries are a safer, cheaper
+                        alternative — they use water-based electrolytes and
+                        zinc metal, which is abundant and easy to handle.
+                        The challenge is finding a cathode material that can
+                        store a lot of charge, survive many cycles, and still
+                        work well when charged or discharged quickly.
+                    </p>
+
+                    <p>
+                        Manganese oxide (Mn₃O₄) is a promising, low-cost
+                        candidate for this cathode. On its own, though, it
+                        suffers from poor electrical conductivity and sluggish
+                        ion movement, which limits how much charge it can
+                        actually store and how fast it can do it.
+                    </p>
+
+                    <div class="research-highlight">
+                        <p>
+                            This project asks a simple question:
+                            <strong>
+                                can doping Mn₃O₄ with small amounts of copper
+                                (Cu²⁺) and potassium (K⁺) improve these
+                                weaknesses — and if so, which dopant does what?
+                            </strong>
+                        </p>
+                    </div>
+
+                    <p>
+                        To answer that, three versions of the material were
+                        made, each with a different Cu²⁺-to-K⁺ ratio, and
+                        tested using cyclic voltammetry (CV) and galvanostatic
+                        charge-discharge (GCD).
+                    </p>
+
+
+                    <h3>The idea behind the doping</h3>
+
+                    <p>
+                        Two different elements were added to the Mn₃O₄ lattice
+                        for two different reasons.
+                    </p>
+
+                    <ul class="research-list">
+
+                        <li>
+                            <strong>Cu²⁺</strong> is expected to improve
+                            electrical conductivity. Copper ions inside the
+                            manganese oxide framework can create easier
+                            pathways for electrons and can also tune the
+                            redox reactions of manganese.
+                        </li>
+
+                        <li>
+                            <strong>K⁺</strong> is expected to pre-intercalate
+                            the crystal lattice, meaning potassium ions occupy
+                            positions in the structure and help open pathways
+                            for Zn²⁺ movement during charging and discharging.
+                        </li>
+
+                    </ul>
+
+
+                    <p>
+                        Three compositions were synthesized to investigate
+                        this trade-off:
+                    </p>
+
+
+                    <div class="research-table-wrap">
+
+                        <table class="research-table">
+
+                            <thead>
+                                <tr>
+                                    <th>Sample</th>
+                                    <th>Cu²⁺</th>
+                                    <th>K⁺</th>
+                                    <th>Design Intent</th>
+                                </tr>
+                            </thead>
+
+                            <tbody>
+
+                                <tr>
+                                    <td><strong>S1</strong></td>
+                                    <td>3.25%</td>
+                                    <td>5%</td>
+                                    <td>
+                                        Baseline, moderate doping of both
+                                    </td>
+                                </tr>
+
+                                <tr>
+                                    <td><strong>S2</strong></td>
+                                    <td>2.0%</td>
+                                    <td>7.5%</td>
+                                    <td>
+                                        Higher K⁺ — more oxygen vacancies,
+                                        more open tunnels
+                                    </td>
+                                </tr>
+
+                                <tr>
+                                    <td><strong>S3</strong></td>
+                                    <td>5.0%</td>
+                                    <td>3.75%</td>
+                                    <td>
+                                        Higher Cu²⁺ — conductivity and redox
+                                        tuning
+                                    </td>
+                                </tr>
+
+                            </tbody>
+
+                        </table>
+
+                    </div>
+
+
+                    <h3>How the material was made</h3>
+
+                    <p>
+                        All three samples were synthesized by
+                        <strong>hydrothermal co-precipitation</strong>.
+                    </p>
+
+                    <ol class="research-list">
+
+                        <li>
+                            Manganese, copper, and potassium salts
+                            (MnSO₄·H₂O, CuSO₄·5H₂O, KCl) were dissolved
+                            together in water.
+                        </li>
+
+                        <li>
+                            Separately, a strongly alkaline solution
+                            (NaOH, pH ≈ 12) with ammonium persulfate as an
+                            oxidizing agent was heated to 60 °C.
+                        </li>
+
+                        <li>
+                            The metal-salt solution was added dropwise into
+                            the hot alkaline solution, precipitating the
+                            metals as hydroxides while partially oxidizing
+                            the manganese.
+                        </li>
+
+                        <li>
+                            The mixture was aged for one hour, then washed
+                            repeatedly with water and ethanol and dried.
+                        </li>
+
+                        <li>
+                            Finally, the dried powder was
+                            <strong>calcined at 400 °C for 3 hours</strong>,
+                            converting it into the doped Mn₃O₄ oxide.
+                        </li>
+
+                    </ol>
+
+                    <p>
+                        The resulting powder was mixed with conductive carbon
+                        and PVDF binder in an 80:10:10 ratio, coated onto
+                        graphite foil, and punched into 16 mm cathodes.
+                        These were tested against a zinc foil anode in a
+                        2 M ZnSO₄ + 0.2 M MnSO₄ aqueous electrolyte.
+                    </p>
+
+
+                    <h3>How the material was tested</h3>
+
+                    <p>
+                        Two complementary electrochemical techniques were
+                        used to characterize each sample.
+                    </p>
+
+                    <ul class="research-list">
+
+                        <li>
+                            <strong>Galvanostatic Charge-Discharge (GCD):</strong>
+                            the current is held constant while the voltage is
+                            measured during charging and discharging. This
+                            provides information about specific capacitance,
+                            energy density, and internal resistance.
+                        </li>
+
+                        <li>
+                            <strong>Cyclic Voltammetry (CV):</strong>
+                            the voltage is swept at a fixed scan rate while
+                            current is measured. This helps understand whether
+                            charge storage is dominated by surface-controlled
+                            capacitive behaviour or slower diffusion-controlled
+                            processes.
+                        </li>
+
+                    </ul>
+
+                    <p>
+                        Each sample was tested by CV at 10, 50, and 100 mV/s
+                        and by GCD at current densities of 1, 5, and 10 A/g.
+                    </p>
+
+
+                    <h3>Results</h3>
+
+
+                    <h4>Specific capacitance from CV</h4>
+
+                    <div class="research-table-wrap">
+
+                        <table class="research-table">
+
+                            <thead>
+                                <tr>
+                                    <th>Scan Rate</th>
+                                    <th>S1 (F/g)</th>
+                                    <th>S2 (F/g)</th>
+                                    <th>S3 (F/g)</th>
+                                </tr>
+                            </thead>
+
+                            <tbody>
+
+                                <tr>
+                                    <td>10 mV/s</td>
+                                    <td>109.8</td>
+                                    <td>136.8</td>
+                                    <td><strong>171.4</strong></td>
+                                </tr>
+
+                                <tr>
+                                    <td>50 mV/s</td>
+                                    <td>52.2</td>
+                                    <td>77.2</td>
+                                    <td><strong>109.3</strong></td>
+                                </tr>
+
+                                <tr>
+                                    <td>100 mV/s</td>
+                                    <td>33.7</td>
+                                    <td>65.0</td>
+                                    <td><strong>77.6</strong></td>
+                                </tr>
+
+                            </tbody>
+
+                        </table>
+
+                    </div>
+
+                    <p>
+                        S3, the high-Cu²⁺ composition, delivered the highest
+                        capacitance at every scan rate tested. However, raw
+                        capacitance alone does not tell the complete story.
+                        Rate retention becomes important when the material is
+                        pushed to operate faster.
+                    </p>
+
+
+                    <h4>Rate retention</h4>
+
+                    <div class="research-table-wrap">
+
+                        <table class="research-table">
+
+                            <thead>
+                                <tr>
+                                    <th>Sample</th>
+                                    <th>Retention</th>
+                                </tr>
+                            </thead>
+
+                            <tbody>
+
+                                <tr>
+                                    <td>S1</td>
+                                    <td>30.7%</td>
+                                </tr>
+
+                                <tr>
+                                    <td><strong>S2</strong></td>
+                                    <td><strong>47.5%</strong></td>
+                                </tr>
+
+                                <tr>
+                                    <td>S3</td>
+                                    <td>45.3%</td>
+                                </tr>
+
+                            </tbody>
+
+                        </table>
+
+                    </div>
+
+                    <p>
+                        Here the trend changes. S2, the high-K⁺ composition,
+                        retains the largest fraction of its capacitance at
+                        fast scan rates, while S1 loses the most performance
+                        as the scan rate increases.
+                    </p>
+
+
+                    <h4>Charge storage mechanism</h4>
+
+                    <p>
+                        The <strong>b-value</strong> describes whether charge
+                        storage behaves more like a diffusion-controlled
+                        process or a capacitive process. A value near 0.5
+                        indicates stronger diffusion behaviour, while a value
+                        near 1 indicates stronger capacitive behaviour.
+                    </p>
+
+
+                    <div class="research-table-wrap">
+
+                        <table class="research-table">
+
+                            <thead>
+                                <tr>
+                                    <th>Sample</th>
+                                    <th>b Anodic</th>
+                                    <th>b Cathodic</th>
+                                    <th>Capacitive Fraction</th>
+                                </tr>
+                            </thead>
+
+                            <tbody>
+
+                                <tr>
+                                    <td>S1</td>
+                                    <td>0.611</td>
+                                    <td>0.609</td>
+                                    <td>31.7%</td>
+                                </tr>
+
+                                <tr>
+                                    <td>S2</td>
+                                    <td>0.690</td>
+                                    <td>0.794</td>
+                                    <td>62.4%</td>
+                                </tr>
+
+                                <tr>
+                                    <td><strong>S3</strong></td>
+                                    <td>0.688</td>
+                                    <td><strong>0.821</strong></td>
+                                    <td><strong>64.4%</strong></td>
+                                </tr>
+
+                            </tbody>
+
+                        </table>
+
+                    </div>
+
+
+                    <p>
+                        Both S2 and S3 shift noticeably toward capacitive
+                        behaviour compared with S1. S3 has the highest
+                        cathodic b-value, suggesting stronger capacitive
+                        behaviour during the reduction process.
+                    </p>
+
+
+                    <h4>GCD performance — Sample 1</h4>
+
+                    <div class="research-table-wrap">
+
+                        <table class="research-table">
+
+                            <thead>
+                                <tr>
+                                    <th>Current Density</th>
+                                    <th>Cs (F/g)</th>
+                                    <th>Specific Capacity (mAh/g)</th>
+                                    <th>Energy Density (Wh/kg)</th>
+                                </tr>
+                            </thead>
+
+                            <tbody>
+
+                                <tr>
+                                    <td>1 A/g</td>
+                                    <td>198.3</td>
+                                    <td>58.6</td>
+                                    <td>31.2</td>
+                                </tr>
+
+                                <tr>
+                                    <td>5 A/g</td>
+                                    <td>60.0</td>
+                                    <td>14.8</td>
+                                    <td>6.6</td>
+                                </tr>
+
+                                <tr>
+                                    <td>10 A/g</td>
+                                    <td>32.9</td>
+                                    <td>6.4</td>
+                                    <td>2.2</td>
+                                </tr>
+
+                            </tbody>
+
+                        </table>
+
+                    </div>
+
+                    <p>
+                        At 1 A/g, S1 showed a measured internal resistance of
+                        <strong>8.9 Ω</strong>. Its capacitance retention from
+                        1 to 10 A/g was 16.6%, showing a significant loss in
+                        performance as the current demand increased.
+                    </p>
+
+
+                    <h3>What it all means</h3>
+
+                    <p>
+                        Putting the CV and GCD results together gives a clear
+                        picture of the different roles played by Cu²⁺ and K⁺.
+                    </p>
+
+                    <ul class="research-list">
+
+                        <li>
+                            <strong>Cu²⁺ acts as the conductivity and
+                            raw-capacity lever.</strong>
+                            Higher Cu²⁺ content in S3 gives the highest
+                            capacitance at every tested scan rate and shifts
+                            the reduction reaction toward faster,
+                            more capacitive behaviour.
+                        </li>
+
+                        <li>
+                            <strong>K⁺ acts as the rate-retention lever.</strong>
+                            S2 does not provide the highest raw capacitance,
+                            but it retains more of its performance when the
+                            material operates at higher rates.
+                        </li>
+
+                        <li>
+                            <strong>Moderate co-doping in S1</strong> does not
+                            maximize either effect, making it weaker in both
+                            capacitance and rate retention compared with the
+                            more strongly doped compositions.
+                        </li>
+
+                    </ul>
+
+                    <div class="research-highlight">
+
+                        <p>
+                            In short, higher Cu²⁺ favours maximum charge-storage
+                            performance, while higher K⁺ favours rate retention.
+                            The ideal composition may therefore lie somewhere
+                            between S2 and S3, balancing both effects.
+                        </p>
+
+                    </div>
+
+
+
+
+                </div>
+
+            </div>
+        </section>
+
+
+        <!-- Research Images -->
+        <section class="research-gallery-section">
+            <div class="container">
+
+                <div class="research-gallery">
+
+                    <!-- Replace these filenames with your actual images -->
+
+                    <div class="research-photo reveal">
+                        <img
+                            src="../assets/images/internship/robell-1.jpeg"
+                            alt="Robell Material MRC research">
+                    </div>
+
+                    <div class="research-photo reveal">
+                        <img
+                            src="../assets/images/internship/robell-2.jpg"
+                            alt="Robell Material MRC research">
+                    </div>
+
+                    <div class="research-photo reveal">
+                        <img
+                            src="../assets/images/internship/robell-3.jpg"
+                            alt="Robell Material MRC research">
+                    </div>
+
+                </div>
+
+            </div>
+        </section>
+
+    </main>
+
+
+    <!-- Theme Toggle -->
+    <button
+        class="theme-toggle"
+        id="themeToggle"
+        aria-label="Toggle theme">
+        ◐
+    </button>
+
+
+    <script src="../js/script.js"></script>
+
+</body>
+</html>
