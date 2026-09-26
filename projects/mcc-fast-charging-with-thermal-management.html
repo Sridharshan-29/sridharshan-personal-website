@@ -1,0 +1,565 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <title>MCC Fast Charging with Thermal Management | Sridharshan</title>
+
+    <link rel="stylesheet" href="../css/style.css">
+
+    <script type="text/javascript" src="https://gc.kis.v2.scr.kaspersky-labs.com/FD126C42-EBFA-4E12-B309-BB3FDD723AC1/main.js?attr=uFz19GAZWfO6PyivIeQRpTIqOe45edyjPa4T3t12QNnOZdkyfqtdEcYuob0zOVgSYzmTVFR1Qvd2aqClQqUpwZsfp5YyZI3i88jNJahFKvHPM8S86uxOp6LtjPXtLHEXG2N_ALAWjOxBf--pRQGIv8mqZO1g9t66NpAVbRJl8lFeawDPWgkWV1iaeWZxlxjsrNrgFjDpIhZwyPprKdpqw9f-Rn6zuPn7orD1SSETSzKIi-Gv-lNuyEledMK4qI4DDlIfMCSPZU5DuysCg9sAZnkyfesc05D-FZGfSy_lYJBoIZZemqETPnbIHOm-o3q4OSuNU-Iiuu_gu-xxsAhgQNHXbMZHm2DMoMwY-NkLgRQ" charset="UTF-8"></script><style>
+        /* ================================
+           PROJECT PAGE
+        ================================= */
+
+        .project-top-actions {
+            display: flex;
+            align-items: center;
+            gap: 12px;
+            flex-wrap: wrap;
+            margin-top: 28px;
+        }
+
+        .project-figure {
+            margin: 30px 0 12px;
+        }
+
+        .project-figure img {
+            width: 100%;
+            height: auto;
+            display: block;
+            border: 1px solid var(--line);
+            border-radius: 16px;
+            background: var(--surface);
+            box-shadow: var(--shadow);
+        }
+
+        .project-figure figcaption {
+            margin-top: 10px;
+            color: var(--muted);
+            font-size: 0.85rem;
+            line-height: 1.5;
+        }
+
+        .project-layout ul {
+            padding-left: 22px;
+        }
+
+        .project-layout li {
+            margin-bottom: 12px;
+        }
+
+        .project-layout li:last-child {
+            margin-bottom: 0;
+        }
+
+        .project-layout strong {
+            color: var(--text);
+        }
+
+        @media (max-width: 800px) {
+            .project-top-actions {
+                margin-top: 22px;
+            }
+
+            .project-figure {
+                margin-top: 24px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- ================================
+         NAVIGATION
+    ================================= -->
+
+    <nav class="nav">
+        <div class="container nav-inner">
+
+            <a class="brand" href="../index.html">
+                SRIDHARSHAN<span>.</span>
+            </a>
+
+            <button class="menu-btn" aria-label="Open menu">
+                ☰
+            </button>
+
+            <div class="nav-links">
+                <a href="../index.html">Home</a>
+                <a href="../about.html">About Me</a>
+                <a href="../projects.html" class="active">Projects</a>
+                <a href="../current-work.html">Currently Working On</a>
+                <a href="../journey.html">Journey</a>
+                <a href="../resume.html">Resume</a>
+                <a href="../contact.html">Contact</a>
+            </div>
+
+        </div>
+    </nav>
+
+    <button
+        class="theme-toggle"
+        aria-label="Toggle light and dark mode">
+    </button>
+
+
+    <!-- ================================
+         PROJECT
+    ================================= -->
+
+    <main class="project-layout">
+
+        <a class="muted" href="../projects.html">
+            ← Back to Projects
+        </a>
+
+
+        <!-- ================================
+             PROJECT INTRO
+        ================================= -->
+
+        <section
+            class="reveal"
+            style="padding-top:55px;border-top:0"
+        >
+
+            <div class="kicker">
+                Project 01
+            </div>
+
+            <h2>
+                MCC Fast Charging with Thermal Management
+            </h2>
+
+            <p class="lead">
+                A project journey exploring battery fast charging and
+                cooling, through modeling, simulation, and a lot of debugging.
+            </p>
+
+            <div class="project-meta">
+                <span class="tag">Battery Modeling</span>
+                <span class="tag">Fast Charging</span>
+                <span class="tag">Thermal Management</span>
+                <span class="tag">MATLAB/Simulink</span>
+            </div>
+
+            <div class="project-top-actions">
+
+                <a
+                    class="btn primary"
+                    href="https://github.com/Sridharshan-29/MCC-Fast-Charging"
+                    target="_blank"
+                    rel="noopener"
+                >
+                    View on GitHub ↗
+                </a>
+
+            </div>
+
+        </section>
+
+
+        <!-- ================================
+             01 / THE BEGINNING
+        ================================= -->
+
+        <section class="reveal">
+
+            <div class="kicker">
+                01 / The Beginning
+            </div>
+
+            <h2>
+                Why I started
+            </h2>
+
+            <p>
+                Fast charging is one of the biggest pain points of electric
+                vehicles — but charging too fast raises two real risks:
+                pushing the voltage too high (damaging the cell) and
+                generating too much heat (which can push a battery into
+                thermal degradation or worse). I wanted to answer a simple
+                question: can a smarter charging strategy charge a battery
+                meaningfully faster than the standard method, without
+                breaking either of those two limits — and how much does
+                active cooling actually help while doing it?
+            </p>
+
+        </section>
+
+
+        <!-- ================================
+             02 / THE PROBLEM
+        ================================= -->
+
+        <section class="reveal">
+
+            <div class="kicker">
+                02 / The Problem
+            </div>
+
+            <h2>
+                What was I trying to understand?
+            </h2>
+
+            <p>
+                The standard way to charge a lithium-ion battery is CC-CV —
+                one constant current, then a slow taper once voltage hits
+                the limit. It's simple, but it wastes a lot of time in that
+                slow taper phase. I wanted to build a Multi-Stage Constant
+                Current (MCC) charger instead — one that steps down through
+                several current levels instead of tapering continuously —
+                and see how much faster it actually charges a 4-cell pack,
+                while staying inside a strict 4.20V and 60°C safety envelope.
+                On top of that, I wanted to compare two cooling methods
+                (air vs liquid) to see how much each one actually helps keep
+                the pack safe during fast charging.
+            </p>
+
+        </section>
+
+
+        <!-- ================================
+             03 / LEARNING & RESEARCH
+        ================================= -->
+
+        <section class="reveal">
+
+            <div class="kicker">
+                03 / Learning &amp; Research
+            </div>
+
+            <h2>
+                What I needed to learn first
+            </h2>
+
+            <ul>
+
+                <li>
+                    How lithium-ion batteries behave electrically — the
+                    <strong>2RC equivalent circuit model</strong>, and why
+                    a battery needs two different time-constant terms
+                    (a fast one and a slow one) to accurately capture its
+                    voltage response.
+                </li>
+
+                <li>
+                    <strong>MATLAB, Simulink, and Simscape</strong> —
+                    specifically the Battery, Thermal, and Stateflow
+                    libraries, none of which I'd used together before.
+                </li>
+
+                <li>
+                    How to build a state machine (Stateflow) that can
+                    safely control current in real time based on live
+                    voltage feedback.
+                </li>
+
+                <li>
+                    How heat actually moves between battery cells sitting
+                    next to each other (conduction) versus how it moves out
+                    to the surrounding air or coolant (convection) — these
+                    are governed by very different physics and needed two
+                    separate types of blocks.
+                </li>
+
+                <li>
+                    How to debug a physics simulation when the numbers look
+                    wrong — learning to trust exported raw data over a
+                    scope screenshot, since scopes can visually hide real
+                    differences or make broken data look fine.
+                </li>
+
+            </ul>
+
+        </section>
+
+
+        <!-- ================================
+             04 / APPROACH
+        ================================= -->
+
+        <section class="reveal">
+
+            <div class="kicker">
+                04 / Approach
+            </div>
+
+            <h2>
+                How I approached it
+            </h2>
+
+            <p>
+                Built a 4-cell series-connected battery pack model, each cell
+                using a 2RC equivalent circuit with SOC-dependent resistance
+                and voltage tables. Designed an MCC controller as a 6-state
+                Stateflow chart — four fixed current stages that step down
+                every time voltage hits 4.20V, followed by a fifth stage
+                using a small feedback loop to hold voltage right at the
+                limit without crossing it.
+            </p>
+
+            <p>
+                Built a separate CC-CV model as the baseline to compare
+                against, using the same voltage limit and current cap.
+                Connected all four cells thermally, both to each other
+                (conduction) and to the outside world (convection), and
+                added a relay-based on/off controller to switch cooling on
+                above 35°C and off below 30°C.
+            </p>
+
+            <p>
+                Tested three thermal configurations — no cooling, air
+                cooling, and liquid cooling — by only changing the
+                convection strength (h value) between runs.
+            </p>
+
+        </section>
+
+
+        <!-- ================================
+             05 / DEVELOPMENT JOURNEY
+        ================================= -->
+
+        <section class="reveal">
+
+            <div class="kicker">
+                05 / Development Journey
+            </div>
+
+            <h2>
+                How the project evolved
+            </h2>
+
+            <p>
+                Most of the real work was debugging, not building:
+            </p>
+
+            <ul>
+
+                <li>
+                    <strong>
+                        Early results showed all four cells sitting at
+                        exactly the same temperature.
+                    </strong>
+                    No matter what I changed, the temperatures stayed the
+                    same. I spent a long time checking the wiring before
+                    finding the real cause — a diagnostic sensor I'd added
+                    was, by its own defining equation, forcing two points to
+                    read equal temperature whenever it was placed alongside
+                    an existing connection instead of directly inside it.
+                </li>
+
+                <li>
+                    <strong>
+                        Found and fixed a wiring polarity mistake.
+                    </strong>
+                    One of the four cells was mirrored compared to the
+                    other three. It was still passing correct current through
+                    the loop, but its voltage and heat readings were subtly
+                    wrong because of it.
+                </li>
+
+                <li>
+                    <strong>
+                        A thermal reference block created another problem.
+                    </strong>
+                    A thermal reference block I added to fix one issue
+                    accidentally pinned the whole cell network to absolute
+                    zero instead of letting it float naturally. The fix was
+                    realizing that block should never be wired into the same
+                    path as the actual heat flow.
+                </li>
+
+                <li>
+                    <strong>
+                        The battery's charging curve appeared to get stuck
+                        at 86% state of charge.
+                    </strong>
+                    It stayed there no matter how long I ran the simulation.
+                    Exporting the raw current values instead of trusting the
+                    plot showed the current really had settled at a very
+                    small but nonzero value. This turned out to be real
+                    physics, not a bug: near full charge, the open-circuit
+                    voltage gets so close to the safety limit that only a
+                    trickle of current is sustainable.
+                </li>
+
+                <li>
+                    <strong>
+                        Realized the comparison was not fair.
+                    </strong>
+                    I was comparing the two charging methods to two different
+                    finish lines (99% vs 80%). That isn't a fair test, so I
+                    reran both methods to the same 80% target.
+                </li>
+
+            </ul>
+
+        </section>
+
+
+        <!-- ================================
+             06 / RESULTS
+        ================================= -->
+
+        <section class="reveal">
+
+            <div class="kicker">
+                06 / Results
+            </div>
+
+            <h2>
+                What I found
+            </h2>
+
+            <figure class="project-figure">
+
+                <img
+                    src="../assets/images/SOC_mccvscccv.png"
+                    alt="SOC versus time comparing MCC and CC-CV charging from 10 percent to 80 percent state of charge"
+                    loading="lazy"
+                >
+
+                <figcaption>
+                    SOC versus time comparing MCC and standard CC-CV
+                    charging over the same 10% to 80% SOC range.
+                </figcaption>
+
+            </figure>
+
+
+            <figure class="project-figure">
+
+                <img
+                    src="../assets/images/Temp_mcc_cc-cv.png"
+                    alt="Maximum cell temperature versus time comparing air cooling and liquid cooling"
+                    loading="lazy"
+                >
+
+                <figcaption>
+                    Maximum cell temperature during the same charging cycle,
+                    comparing air cooling and liquid cooling.
+                </figcaption>
+
+            </figure>
+
+
+            <ul>
+
+                <li>
+                    <strong>
+                        MCC reached 80% state of charge about 12.5 minutes
+                        faster than standard CC-CV charging
+                        (3988s vs 4735s)
+                    </strong>
+                    — a ~16% time saving, at the exact same starting and
+                    ending charge level.
+                </li>
+
+                <li>
+                    <strong>
+                        Liquid cooling kept the pack's peak temperature
+                        about 5°C lower than air cooling
+                        (35.0°C vs 40.2°C)
+                    </strong>
+                    and did it with a noticeably tighter, faster correction
+                    pattern rather than one slow overshoot-and-recover swing.
+                </li>
+
+                <li>
+                    <strong>
+                        Without any active cooling at all, the pack's
+                        temperature climbed well past both of these.
+                    </strong>
+                    This confirmed that active cooling is genuinely
+                    necessary at this charging rate, not just a nice-to-have.
+                </li>
+
+                <li>
+                    <strong>
+                        The two cooling methods converged to almost the same
+                        temperature by the end of the charge.
+                    </strong>
+                    The real difference between them only shows up during
+                    the high-current early stages, when the most heat is
+                    being generated.
+                </li>
+
+            </ul>
+
+        </section>
+
+
+        <!-- ================================
+             07 / WHAT I LEARNED
+        ================================= -->
+
+        <section class="reveal">
+
+            <div class="kicker">
+                07 / What I Learned
+            </div>
+
+            <h2>
+                The biggest takeaways
+            </h2>
+
+            <ul>
+
+                <li>
+                    A scope or plot can visually hide a real problem —
+                    always cross-check with the actual exported numbers
+                    before trusting what a chart appears to show.
+                </li>
+
+                <li>
+                    When two sensor readings contradict each other, don't
+                    assume the model is broken — check whether the
+                    measurement tool itself is changing what it's measuring,
+                    especially with "ideal" sensors that have their own
+                    governing equations.
+                </li>
+
+                <li>
+                    A result that looks like a bug (charging suddenly
+                    grinding to a near-halt) can be genuine physics — the
+                    fix was understanding the electrochemistry well enough
+                    to tell the difference, not just re-tuning numbers until
+                    the plot looked nicer.
+                </li>
+
+                <li>
+                    Always define a fair, identical comparison point before
+                    comparing two methods — an unequal finish line quietly
+                    invalidates the whole comparison, even if both
+                    individual results are correct.
+                </li>
+
+            </ul>
+
+        </section>
+
+    </main>
+
+
+    <!-- ================================
+         FOOTER
+    ================================= -->
+
+    <footer class="footer">
+
+        <div class="container">
+            © 2026 Sridharshan. Built as a personal engineering portfolio.
+        </div>
+
+    </footer>
+
+
+    <script src="../js/script.js"></script>
+
+</body>
+</html>

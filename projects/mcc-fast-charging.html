@@ -1,0 +1,385 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Optimizing MCC Fast Charging Currents | Sridharshan</title>
+    <link rel="stylesheet" href="../css/style.css">
+
+    <script type="text/javascript" src="https://gc.kis.v2.scr.kaspersky-labs.com/FD126C42-EBFA-4E12-B309-BB3FDD723AC1/main.js?attr=aKS_XdD-tHzfMZfLrGYu5bvJAR4NP4Tugjjghof1lqkRUy_nvdo-F97bxE0dLuK-WTib6F9Cwx0s3L3MQIIybhQDX7LNehoza3-l0L6sGc97fGaovZ3hqlj7HSVH14WJeC-30dyM0j3KeaDJ6JL76ivIumIODyGNL2wR9nYVs61TulJfUkfRXd_yfULoiI1_8iBRcm1YoypSchoRpxNP1KAmvjiGkt8F0-ZXYKzJqfKxzCcMT6IoCMRGy-JWb9lPznuzutaX5PmXuMDv6I-nU0CcLBZKw2vtLUSry2e9lD8yKlXAStzNOblZD5mMH4Ju8h7CWLN0WOJTJomMQgVSsg" charset="UTF-8"></script><style>
+        .project-top-actions {
+            display: flex;
+            align-items: center;
+            gap: 12px;
+            flex-wrap: wrap;
+            margin-top: 28px;
+        }
+
+        .project-figure {
+            margin: 28px 0 10px;
+        }
+
+        .project-figure img {
+            width: 100%;
+            height: auto;
+            display: block;
+            border: 1px solid var(--line);
+            border-radius: 16px;
+            background: var(--surface);
+            box-shadow: var(--shadow);
+        }
+
+        .project-figure figcaption {
+            margin-top: 10px;
+            color: var(--muted);
+            font-size: 0.85rem;
+            line-height: 1.5;
+        }
+
+        .project-layout ul {
+            padding-left: 22px;
+        }
+
+        .project-layout li {
+            margin-bottom: 12px;
+        }
+
+        .project-layout li:last-child {
+            margin-bottom: 0;
+        }
+    </style>
+</head>
+
+<body>
+
+    <nav class="nav">
+        <div class="container nav-inner">
+            <a class="brand" href="../index.html">SRIDHARSHAN<span>.</span></a>
+
+            <button class="menu-btn" aria-label="Open menu">☰</button>
+
+            <div class="nav-links">
+                <a href="../index.html">Home</a>
+                <a href="../about.html">About Me</a>
+                <a href="../projects.html" class="active">Projects</a>
+                <a href="../current-work.html">Currently Working On</a>
+                <a href="../journey.html">Journey</a>
+                <a href="../resume.html">Resume</a>
+                <a href="../contact.html">Contact</a>
+            </div>
+        </div>
+    </nav>
+
+    <button class="theme-toggle" aria-label="Toggle light and dark mode"></button>
+
+    <main class="project-layout">
+
+        <a class="muted" href="../projects.html">← Back to Projects</a>
+
+        <!-- ================================
+             PROJECT INTRO
+        ================================= -->
+        <section class="reveal" style="padding-top:55px;border-top:0">
+
+            <div class="kicker">Project 01</div>
+
+            <h2>Optimizing MCC Fast Charging Currents</h2>
+
+            <p class="lead">
+                A project journey exploring battery fast charging through
+                modeling, simulation, and a deeper investigation of
+                electrochemical behavior.
+            </p>
+
+            <div class="project-meta">
+                <span class="tag">Battery Modeling</span>
+                <span class="tag">Fast Charging</span>
+                <span class="tag">Lithium Plating</span>
+                <span class="tag">Simulation</span>
+            </div>
+
+            <div class="project-top-actions">
+                <a
+                    class="btn primary"
+                    href="https://github.com/Sridharshan-29/Optimizing-MCC-Charging-Currents/tree/main"
+                    target="_blank"
+                    rel="noopener"
+                >
+                    View on GitHub ↗
+                </a>
+            </div>
+
+        </section>
+
+
+        <!-- ================================
+             01 / THE BEGINNING
+        ================================= -->
+        <section class="reveal">
+            <div class="kicker">01 / The Beginning</div>
+
+            <h2>Why I started</h2>
+
+            <p>
+                Electric vehicles are only as good as how fast they charge —
+                but pushing current in too fast, especially on an aged battery,
+                can cause lithium plating: a failure mode where lithium builds
+                up on the electrode instead of absorbing into it, permanently
+                damaging the cell. I wanted to answer a simple question: for a
+                worn-out battery, what's the fastest safe way to charge it,
+                and does that answer change as the battery keeps aging?
+            </p>
+        </section>
+
+
+        <!-- ================================
+             02 / THE PROBLEM
+        ================================= -->
+        <section class="reveal">
+            <div class="kicker">02 / The Problem</div>
+
+            <h2>What was I trying to understand?</h2>
+
+            <p>
+                Instead of one constant current, <strong>multi-stage constant
+                current (MCC)</strong> charging steps down through several
+                current levels as the battery fills up — faster than a simple
+                charger, if tuned right. But as a battery ages, its resistance
+                rises and its capacity drops, changing what's actually safe.
+                I wanted to simulate an aged cell and find the best 4-stage
+                charging schedule — fast, but never crossing into plating risk —
+                and see how that ideal schedule shifts with age.
+            </p>
+        </section>
+
+
+        <!-- ================================
+             03 / LEARNING & RESEARCH
+        ================================= -->
+        <section class="reveal">
+            <div class="kicker">03 / Learning &amp; Research</div>
+
+            <h2>What I needed to learn first</h2>
+
+            <ul>
+                <li>
+                    How lithium-ion batteries actually behave internally,
+                    and why fast charging risks plating.
+                </li>
+                <li>
+                    <strong>PyBaMM</strong>, a Python library for full
+                    physics-based battery simulation, and the
+                    <strong>DFN (Doyle-Fuller-Newman)</strong> model it uses —
+                    a detailed model that tracks what's happening inside both
+                    electrodes, not just at the terminals.
+                </li>
+                <li>
+                    How to correctly detect "plating risk" from simulation
+                    output — harder than expected, since the obvious variables
+                    turned out to be measuring the wrong thing.
+                </li>
+                <li>
+                    <strong>Differential evolution</strong>, an optimization
+                    method good at searching messy, non-smooth simulation
+                    landscapes.
+                </li>
+                <li>
+                    How to read real lab battery-aging test data (RPTs) to get
+                    real capacity/resistance numbers at different points in a
+                    battery's life.
+                </li>
+            </ul>
+        </section>
+
+
+        <!-- ================================
+             04 / APPROACH
+        ================================= -->
+        <section class="reveal">
+            <div class="kicker">04 / Approach</div>
+
+            <h2>How I approached it</h2>
+
+            <p>
+                I used PyBaMM's DFN model with a real, published parameter set
+                for the actual battery cell, fed with real lab-measured capacity
+                and resistance data. I structured charging as 4 constant-current
+                stages that step down over time, with a built-in safety rule:
+                continuously check the anode's electrical potential and never let
+                it approach the plating threshold.
+            </p>
+
+            <p>
+                I then ran an optimization algorithm to find the fastest 4
+                currents that never break that rule. I repeated this across
+                different battery ages to see how the optimal charging plan shifts
+                as the cell ages.
+            </p>
+        </section>
+
+
+        <!-- ================================
+             05 / DEVELOPMENT JOURNEY
+        ================================= -->
+        <section class="reveal">
+            <div class="kicker">05 / Development Journey</div>
+
+            <h2>How the project evolved</h2>
+
+            <p>
+                Most of the real work was debugging, not tuning:
+            </p>
+
+            <ul>
+                <li>
+                    <strong>The optimizer kept failing immediately.</strong>
+                    Traced this to the simulation silently skipping charging
+                    stages when voltage spiked too fast — common in aged,
+                    high-resistance cells. Fixed by changing how stage transitions
+                    are triggered.
+                </li>
+                <li>
+                    <strong>The plating-safety check was wrong — twice.</strong>
+                    First it always flagged danger, even during normal charging.
+                    Then a second attempt always looked safe, no matter the current,
+                    because it was reading a value that doesn't actually respond to
+                    current. Found the correct signal and verified it by manually
+                    testing different currents and confirming it moved the way real
+                    physics predicts.
+                </li>
+                <li>
+                    <strong>Runs were painfully slow (30–40 min each).</strong>
+                    Sped up by loosening simulation precision during search and only
+                    using full precision for the final answer.
+                </li>
+                <li>
+                    <strong>Real data only covered a tiny sliver of aging (~3%
+                    health decline).</strong>
+                    Not enough to see a trend. Extended it using real measurements
+                    anchored to a published aging trend, keeping "measured" and
+                    "estimated" clearly separate.
+                </li>
+                <li>
+                    <strong>A surprising result held up under scrutiny.</strong>
+                    Charging time barely changed even though resistance nearly
+                    doubled — instead of assuming a bug, I did the math by hand
+                    and found a real cancellation effect: capacity shrinks with age
+                    at nearly the same rate the safe current does.
+                </li>
+                <li>
+                    <strong>Pushed one step further.</strong>
+                    Letting the optimizer also choose <em>when</em> to switch stages,
+                    not just the currents, recovered extra speed.
+                </li>
+                <li>
+                    <strong>Validated the key results twice.</strong>
+                    Reran with a much larger search budget to confirm they weren't
+                    a fluke of a quick search.
+                </li>
+            </ul>
+        </section>
+
+
+        <!-- ================================
+             06 / RESULTS
+        ================================= -->
+        <section class="reveal">
+            <div class="kicker">06 / Results</div>
+
+            <h2>What I found</h2>
+
+            <figure class="project-figure">
+                <img
+                    src="../assets/images/mcc-digital-twin-validation.png"
+                    alt="Digital twin validation comparing measured and DFN predicted battery voltage, prediction error, internal states, and measured OCV"
+                    loading="lazy"
+                >
+                <figcaption>
+                    Digital twin validation for the aged cell: measured versus
+                    DFN-predicted terminal voltage, prediction error, internal
+                    states, and measured OCV.
+                </figcaption>
+            </figure>
+
+            <figure class="project-figure">
+                <img
+                    src="../assets/images/mcc-charging-time-vs-soh.png"
+                    alt="Charging time versus state of health comparing optimized MCC and CC-CV baseline"
+                    loading="lazy"
+                >
+                <figcaption>
+                    Charging time versus state of health for optimized MCC
+                    compared with the CC-CV 1C baseline.
+                </figcaption>
+            </figure>
+
+            <ul>
+                <li>
+                    The optimized schedule charged <strong>~24–26% faster</strong>
+                    than a standard method, at every battery age tested, while
+                    staying safely clear of plating risk.
+                </li>
+                <li>
+                    <strong>Surprising finding:</strong> total charging time
+                    barely changed with age (only ~5–6% difference from fresh to
+                    heavily aged), despite resistance nearly doubling — because
+                    shrinking capacity and shrinking safe current largely cancel
+                    out.
+                </li>
+                <li>
+                    Letting the optimizer also pick stage-switch timing recovered
+                    a further <strong>3–5% speed improvement</strong>.
+                </li>
+                <li>
+                    Testing on the real (narrow-range) lab data alone showed almost
+                    no trend — confirming the real dataset simply didn't span
+                    enough aging to reveal one, which is exactly why the wider
+                    estimated range was needed.
+                </li>
+            </ul>
+        </section>
+
+
+        <!-- ================================
+             07 / WHAT I LEARNED
+        ================================= -->
+        <section class="reveal">
+            <div class="kicker">07 / What I Learned</div>
+
+            <h2>The biggest takeaways</h2>
+
+            <ul>
+                <li>
+                    A plausible-looking simulation variable isn't automatically
+                    the right one — verify it actually responds the way real
+                    physics predicts before trusting it.
+                </li>
+                <li>
+                    A broken-looking optimizer result usually means the simulation
+                    is wrong, not the optimizer — chasing the real cause paid off
+                    more than tuning settings.
+                </li>
+                <li>
+                    A surprising result deserves a hand-verified explanation,
+                    not a shrug — the "time barely changed" finding turned out to
+                    be real, explainable physics.
+                </li>
+                <li>
+                    Next time, get a wider spread of real lab data upfront, rather
+                    than discovering mid-project that it only covers a narrow slice
+                    of aging.
+                </li>
+            </ul>
+        </section>
+
+    </main>
+
+    <footer class="footer">
+        <div class="container">
+            © 2026 Sridharshan. Built as a personal engineering portfolio.
+        </div>
+    </footer>
+
+    <script src="../js/script.js"></script>
+</body>
+</html>
